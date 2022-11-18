@@ -1,6 +1,6 @@
-﻿using BethanyPieShop.Models;
+﻿using BethanysPieShop.Models;
 
-namespace BethanyPieShop.ViewModels
+namespace BethanysPieShop.ViewModels
 {
     public class PiesListViewModel
     {

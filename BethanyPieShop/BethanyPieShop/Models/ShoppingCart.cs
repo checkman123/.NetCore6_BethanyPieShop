@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace BethanyPieShop.Models
+namespace BethanysPieShop.Models
 {
     public class ShoppingCart
     {
@@ -29,7 +29,7 @@ namespace BethanyPieShop.Models
 
         public void AddToCart(Pie pie, int amount)
         {
-            
+
             var shoppingCartItem =
                     _appDbContext.ShoppingCartItems.SingleOrDefault(
                         s => s.Pie.PieId == pie.PieId && s.ShoppingCartId == ShoppingCartId);

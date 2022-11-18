@@ -1,6 +1,6 @@
-﻿namespace BethanyPieShop.Models
+﻿namespace BethanysPieShop.Models
 {
-    public class CategoryRepository: ICategoryRepository
+    public class CategoryRepository : ICategoryRepository
     {
         private readonly AppDbContext _appDbContext;
         public CategoryRepository(AppDbContext appDbContext)

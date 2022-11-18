@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace BethanyPieShop.Controllers
+namespace BethanysPieShop.Controllers
 {
     public class ContactController : Controller
     {

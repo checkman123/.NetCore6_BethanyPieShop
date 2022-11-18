@@ -1,8 +1,8 @@
-﻿using BethanyPieShop.Models;
-using BethanyPieShop.ViewModels;
+﻿using BethanyPieShop.ViewModels;
+using BethanysPieShop.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BethanyPieShop.Controllers
+namespace BethanysPieShop.Controllers
 {
     public class ShoppingCartController : Controller
     {

@@ -1,10 +1,10 @@
-﻿using BethanyPieShop.Models;
-using BethanyPieShop.ViewModels;
+﻿using BethanyPieShop.ViewModels;
+using BethanysPieShop.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BethanyPieShop.Components
+namespace BethanysPieShop.Components
 {
- public class ShoppingCartSummary: ViewComponent
+    public class ShoppingCartSummary : ViewComponent
     {
         private readonly ShoppingCart _shoppingCart;
 

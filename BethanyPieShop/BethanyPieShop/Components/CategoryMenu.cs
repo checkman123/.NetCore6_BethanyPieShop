@@ -1,9 +1,9 @@
-﻿using BethanyPieShop.Models;
+﻿using BethanysPieShop.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BethanyPieShop.Components
+namespace BethanysPieShop.Components
 {
-    public class CategoryMenu:ViewComponent
+    public class CategoryMenu : ViewComponent
     {
         private readonly ICategoryRepository _categoryRepository;
 
