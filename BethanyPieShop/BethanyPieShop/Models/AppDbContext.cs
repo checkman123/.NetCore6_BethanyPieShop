@@ -30,7 +30,8 @@ namespace BethanyPieShop.Models
                 InStock = true, 
                 IsPieOfTheWeek = false, 
                 ImageThumbnailUrl = "https://gillcleerenpluralsight.blob.core.windows.net/files/strawberrypiesmall.jpg",
-                AllergyInformation=""
+                AllergyInformation="",
+                Note=""
             }
             );
             modelBuilder.Entity<Pie>().HasData(new Pie
@@ -45,7 +46,8 @@ namespace BethanyPieShop.Models
                 InStock = true,
                 IsPieOfTheWeek = false,
                 ImageThumbnailUrl = "https://gillcleerenpluralsight.blob.core.windows.net/files/cheesecakesmall.jpg",
-                AllergyInformation = ""
+                AllergyInformation = "",
+                Note = ""
             }
             );
             modelBuilder.Entity<Pie>().HasData(new Pie
@@ -60,7 +62,8 @@ namespace BethanyPieShop.Models
                 InStock = true,
                 IsPieOfTheWeek = true,
                 ImageThumbnailUrl = "https://gillcleerenpluralsight.blob.core.windows.net/files/rhubarbpiesmall.jpg",
-                AllergyInformation = ""
+                AllergyInformation = "",
+                Note = ""
             }
             );
             modelBuilder.Entity<Pie>().HasData(new Pie
@@ -75,7 +78,8 @@ namespace BethanyPieShop.Models
                 InStock = true,
                 IsPieOfTheWeek = true,
                 ImageThumbnailUrl = "https://gillcleerenpluralsight.blob.core.windows.net/files/pumpkinpiesmall.jpg",
-                AllergyInformation = ""
+                AllergyInformation = "",
+                Note = ""
             }
             );
 
