@@ -24,12 +24,14 @@
             <div class="collaspe navbar-collapse" id="bs-example-navbar-collaspe-1">
                 <ul class="nav navbar-nav">
                     <li><a asp-controller="Pie" asp-action="List">Pies</a></li>
+                    <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                    @await Component.InvokeAsync("ShoppingCartSummary")
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-md-3">
                 <p class="lead">

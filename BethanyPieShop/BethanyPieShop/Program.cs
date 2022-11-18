@@ -6,9 +6,8 @@ var builder = WebApplication.CreateBuilder(args);
 /*  Put Dependency Injection Here aka Register Dependent Services   
         ConfigureServices()*/
 //builder.Services.AddAuthentication();
-builder.Services.AddControllersWithViews();
-builder.Services.AddScoped<IPieRepository, PieRepository>();
-builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+
+//make it so it is Development mode
 builder.Environment.IsDevelopment();
 
 //Connect with sql server
@@ -16,6 +15,14 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
+
+builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<IPieRepository, PieRepository>();
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+builder.Services.AddScoped<ShoppingCart>(serviceProvider => ShoppingCart.GetCart(serviceProvider));
+
+builder.Services.AddHttpContextAccessor();
+builder.Services.AddSession();
 
 
 
@@ -33,7 +40,12 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStatusCodePages();
 app.UseStaticFiles();
+
+//Need to call session before routing
+app.UseSession();
+
 app.UseRouting();
+
 
 app.MapControllerRoute(
     name: "default",

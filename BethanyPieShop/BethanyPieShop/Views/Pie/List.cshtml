@@ -3,10 +3,10 @@
 
 <h1>@Model.CurrentCategory</h1>
 
-<div class="d-flex flex-wrap gap-2">
+
     @foreach (var pie in Model.Pies)
     {
         //_Piecard is in Share Folder. Similar to components in React
         <partial name="_PieCard" model="pie"/>
     }
-    </div>
+
