@@ -1,8 +1,8 @@
-﻿using BethanyPieShop.Models;
+﻿using BethanysPieShop.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BethanyPieShop.Controllers
+namespace BethanysPieShop.Controllers
 {
     public class OrderController : Controller
     {

@@ -1,4 +1,6 @@
-﻿namespace BethanyPieShop.Models
+﻿using BethanyPieShop.Models;
+
+namespace BethanysPieShop.Models
 {
     public class OrderRepository : IOrderRepository
     {

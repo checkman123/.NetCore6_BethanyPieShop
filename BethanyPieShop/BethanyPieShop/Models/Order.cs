@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc.ModelBinding;
 using System.ComponentModel.DataAnnotations;
 
-namespace BethanyPieShop.Models
+namespace BethanysPieShop.Models
 {
     public class Order
     {

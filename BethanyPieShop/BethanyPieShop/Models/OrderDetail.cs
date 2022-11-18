@@ -1,4 +1,4 @@
-﻿namespace BethanyPieShop.Models
+﻿namespace BethanysPieShop.Models
 {
     public class OrderDetail
     {
