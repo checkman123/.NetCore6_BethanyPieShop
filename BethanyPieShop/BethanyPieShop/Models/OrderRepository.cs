@@ -1,4 +1,4 @@
-﻿using BethanyPieShop.Models;
+﻿using BethanysPieShop.Models;
 
 namespace BethanysPieShop.Models
 {
