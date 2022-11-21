@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
+//Services
 builder.Services.AddControllersWithViews();
 
 //builder.Services.AddScoped<ICategoryRepository, MockCategoryRepository>();
@@ -26,6 +27,7 @@ builder.Services.AddDbContext<BethanysPieShopDbContext>(options => {
 
 var app = builder.Build();
 
+//Middleware
 //app.MapGet("/", () => "Hello World!");
 if (app.Environment.IsDevelopment())
 {
